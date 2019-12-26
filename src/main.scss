@@ -1,0 +1,160 @@
+$font: 'Nunito', sans-serif;
+
+body{
+    background-color: #EEE;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#container{
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 25px;
+}
+
+#header{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+
+    .logo{
+        display: inline;
+        margin: 0;
+        font-family: 'Lovers Quarrel', cursive;
+        font-size: 70px;
+        color: black;
+
+        span{
+            color: seagreen;
+            font-size: 90px;
+        }
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    font-family: $font;
+    min-height: 1000px;
+}
+
+#nav{
+    width: 100%;
+    height: 100%;
+}
+
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #1C2833;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+    li{
+        float: left;
+
+        a{
+            color: #B3B6B7;
+            padding: 20px;
+            display: block;
+        }
+
+        a:hover{
+            color: #F7F9F9;
+        }
+    }
+
+    :last-child{
+        float: right;
+
+        :hover{
+            text-decoration-line: underline;
+        }
+    }
+
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .text-date{
+        text-align: right;
+        margin-right: 20px;
+    }
+}
+
+#text-container{
+    margin: 20px;
+
+    .text-header{
+        text-indent: 30px;
+    }
+
+    .text{
+        overflow: hidden;
+        text-indent: 30px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #my-photo{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+}
+
+h2{
+    font-family: 'Gudea', sans-serif;
+}
+
+#footer{
+    overflow: hidden;
+    background-color: #1C2833;
+    color: #B3B6B7;
+    width: 100%;
+    height: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer-text{
+        font-family: 'Inconsolata', monospace;
+        font-size: 20px;
+    }
+
+    .linkedin-footer{
+        margin-right: 5px;
+        color: white;
+
+        :hover{
+            color: #21618C;
+        }
+    }
+
+    .github-footer{
+        margin-left: 5px;
+        color: white;
+
+        :hover{
+            color: gray;
+        }
+    }
+
+}
