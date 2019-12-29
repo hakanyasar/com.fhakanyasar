@@ -10,11 +10,11 @@ $(document).ready(function(){
             if(temp == false){
                 $("#container").css({"background-color": "#2d2d2d", "color": "#BDBDBD"});
                 $("#nav a").css({"color": "#BDBDBD"});
-                $("#nav a").hover(function(){
-                    $(this).css({"border-bottom": "3px solid white"})
-                }, function(){
-                    $(this).css({"border-bottom": "3px solid #1C2833"})
-                });
+                // $("#nav a").hover(function(){
+                //     $(this).css({"border-bottom": "3px solid #B3B6B7"})
+                // }, function(){
+                //     $(this).css({"border-bottom": "3px solid #1C2833"})
+                // });
                 temp = true;
             }
                 
