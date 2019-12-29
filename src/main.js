@@ -8,12 +8,19 @@ $(document).ready(function(){
         function nightModeRun(){
                     
             if(temp == false){
-                $("#content").css({"background-color": "#17202A", "color": "white"});
+                $("#container").css({"background-color": "#2d2d2d", "color": "#BDBDBD"});
+                $("#nav a").css({"color": "#BDBDBD"});
+                $("#nav a").hover(function(){
+                    $(this).css({"border-bottom": "3px solid white"})
+                }, function(){
+                    $(this).css({"border-bottom": "3px solid #1C2833"})
+                });
                 temp = true;
             }
                 
             else if(temp == true){
-                $("#content").css({"background-color": "white", "color": "black"});
+                $("#container").css({"background-color": "white", "color": "black"});
+                $("#nav a").css({"color": "black"});
                 temp = false;
             }
         }
