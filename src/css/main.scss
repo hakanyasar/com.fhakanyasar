@@ -1,0 +1,239 @@
+// $font: 'Nunito', sans-serif;
+$font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+
+body{
+    // background-color: #2d2d2d;
+    background-image: url("../../img/tasDuvar3.jpg");
+    background-size: auto;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 25px;
+
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    font-family: $font;
+
+}
+
+#nav{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 4px 12px #B3B6B7;
+
+}
+
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    // border-bottom: 1px solid #1C2833;
+    // box-shadow: 0 0px 16px 0 #B3B6B7;
+
+    li{
+        float: left;
+
+        a{
+            color: black;
+            padding: 15px;
+            display: block;
+        }
+
+        a:hover:not(.night-mode):not(.hamburger-menu){
+            border-bottom: 1px solid #1C2833;
+        }
+
+        .hamburger-menu{
+            display: inline;
+            cursor: pointer;
+            padding: 14px;
+
+            .bar1, .bar3{
+                border: 1px solid black;
+                border-radius: 8px;
+                width: 35px;
+                height: 3px;
+                background-color: black;
+            }
+
+            .bar2{
+                border: 1px solid black;
+                border-radius: 8px;
+                width: 35px;
+                height: 3px;
+                background-color: black;
+                margin: 6px 0px;
+            }
+
+        }   
+    }
+
+    :last-child{
+        float: right;
+
+        :hover{
+            text-decoration-line: underline;
+        }
+    }
+
+}
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    min-height: 2500px;
+    margin-bottom: 10px;
+
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 4px 12px #B3B6B7;
+
+    .text-date{
+        text-align: right;
+        margin-right: 20px;
+    }
+}
+
+#text-container{
+    margin: 20px;
+    margin-top: 65px;
+
+    .text-header{
+        text-indent: 30px;
+    }
+
+    .text{
+        overflow: hidden;
+        text-indent: 30px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #my-photo{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .text-date{
+        color: gray;
+    }
+
+}
+
+h2{
+    font-family: 'Gudea', sans-serif;
+}
+
+#footer{
+    overflow: hidden;
+    background-color: #1C2833;
+    color: #B3B6B7;
+    width: 100%;
+    height: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 8px 16px #B3B6B7;
+
+    .footer-text{
+        font-family: 'Inconsolata', monospace;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .github-footer{
+        color: white;
+
+        :hover{
+            color: #4078c0;
+        }
+    }
+    
+    .linkedin-footer{
+        margin-left: 10px;
+        color: white;
+
+        :hover{
+            color: #0077b5;
+        }
+    }
+    
+    .telegram-footer{
+        margin-left: 10px;
+        color: white;
+    
+        :hover{
+            color: #0088cc;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1230px) and (min-width:990px){ 
+    #container{
+        width: 85%;
+    }
+
+    ul li{
+        float: none;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #container{
+        width: 85%;
+    }
+
+    ul li{
+        float: none;
+    }
+}
+@media only screen and (max-width: 479px) {
+    #container{
+        width: 85%;
+    }
+
+    ul li{
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
